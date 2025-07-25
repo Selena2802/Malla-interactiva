@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular - Medicina Veterinaria y Zootecnia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular - Medicina Veterinaria y Zootecnia</h1>
+
+  <div class="semestre" onclick="toggle('s1')">1er Semestre</div>
+  <ul id="s1" class="materias oculto">
+    <li>Ecología General – Sin requisitos</li>
+    <li>Histología y Embriología Veterinaria – Sin requisitos</li>
+    <li>Anatomía Veterinaria 1 – Sin requisitos</li>
+    <li>Metodología de la Investigación – Sin requisitos</li>
+    <li>Bioquímica Veterinaria 1 – Sin requisitos</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s2')">2do Semestre</div>
+  <ul id="s2" class="materias oculto">
+    <li>Histología Veterinaria 2 – Requiere Histología y Embriología Veterinaria</li>
+    <li>Anatomía Veterinaria 2 – Requiere Anatomía Veterinaria 1</li>
+    <li>Bioquímica Veterinaria 2 – Requiere Bioquímica Veterinaria 1</li>
+    <li>Bioestadística Veterinaria – Requiere Metodología de la Investigación</li>
+    <li>Etología y Bienestar Animal – Requiere Ecología General</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s3')">3er Semestre</div>
+  <ul id="s3" class="materias oculto">
+    <li>Bacteriología y Micología Veterinaria – Requiere Histología Veterinaria 2</li>
+    <li>Virología e Inmunología Veterinaria – Requiere Bioquímica Veterinaria 2</li>
+    <li>Parasitología y Enfermedades Parasitarias 1 – Requiere Etología y Bienestar Animal</li>
+    <li>Fisiología Animal 1 – Requiere Anatomía Veterinaria 2</li>
+    <li>Genética Veterinaria – Requiere Bioestadística Veterinaria</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s4')">4to Semestre</div>
+  <ul id="s4" class="materias oculto">
+    <li>Parasitología y Enfermedades Parasitarias 2 – Requiere Parasitología y Enfermedades Parasitarias 1</li>
+    <li>Fisiología Animal 2 – Requiere Fisiología Animal 1</li>
+    <li>Patología General Veterinaria – Requiere Bacteriología y Micología Veterinaria</li>
+    <li>Propedéutica – Requiere Virología e Inmunología Veterinaria</li>
+    <li>Nutrición Aplicada – Requiere Genética Veterinaria</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s5')">5to Semestre</div>
+  <ul id="s5" class="materias oculto">
+    <li>Fisiopatología de la Reproducción Animal – Requiere Fisiología Animal 2</li>
+    <li>Patología Sistémica – Requiere Patología General Veterinaria</li>
+    <li>Farmacología y Terapéutica Veterinaria – Requiere Propedéutica</li>
+    <li>Alimentos y Alimentación – Requiere Nutrición Aplicada</li>
+    <li>Producción y Manejos De Forrajes – Requiere Parasitología y Enfermedades Parasitarias 2</li>
+    <li>Urgencias Médico Veterinarias – Requiere Propedéutica</li>
+    <li>Mejoramiento Genético – Requiere Genética Veterinaria</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s6')">6to Semestre</div>
+  <ul id="s6" class="materias oculto">
+    <li>Enfermedades Infecciosas de los Animales Domésticos – Requiere Fisiopatología de la Reproducción Animal</li>
+    <li>Imagenología – Requiere Propedéutica</li>
+    <li>Toxicología – Requiere Patología Sistémica</li>
+    <li>Terapéutica Quirúrgica y Cirugía Veterinaria – Requiere Farmacología y Terapéutica Veterinaria</li>
+    <li>Economía Agropecuaria – Requiere Alimentos y Alimentación</li>
+    <li>Metodología Diagnóstica y Bromatología – Requiere Urgencias Médico Veterinarias</li>
+    <li>Desarrollo Sostenible e Higiene Ambiental – Requiere Mejoramiento Genético</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s7')">7mo Semestre</div>
+  <ul id="s7" class="materias oculto">
+    <li>Tecnología, Higiene e Inspección de Alimentos – Requiere Toxicología</li>
+    <li>Epidemiología Veterinaria – Requiere Enfermedades Infecciosas de los Animales Domésticos</li>
+    <li>Patología Clínica – Requiere Terapéutica Quirúrgica y Cirugía Veterinaria</li>
+    <li>Producción de Ovinos, Caprinos y Camélidos Americanos – Requiere Economía Agropecuaria</li>
+    <li>Acuicultura – Requiere Economía Agropecuaria</li>
+    <li>Clínica y Cirugía Especial – Requiere Metodología Diagnóstica y Bromatología</li>
+    <li>Biotecnología de la Reproducción – Requiere Desarrollo Sostenible e Higiene Ambiental</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s8')">8vo Semestre</div>
+  <ul id="s8" class="materias oculto">
+    <li>Producción de Cerdos – Requiere Economía Agropecuaria, Patología Clínica</li>
+    <li>Producción de Bovinos de Carne – Requiere Economía Agropecuaria, Epidemiología Veterinaria</li>
+    <li>Producción de Bovinos de Leche – Requiere Economía Agropecuaria, Tecnología, Higiene e Inspección de Alimentos</li>
+    <li>Producción de Aves – Requiere Economía Agropecuaria, Epidemiología Veterinaria</li>
+    <li>Producción de Equinos – Requiere Economía Agropecuaria</li>
+    <li>Enfermedades Emergentes – Requiere Clínica y Cirugía Especial</li>
+    <li>Producción Orgánica Pecuaria – Requiere Biotecnología de la Reproducción</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s9')">9no Semestre</div>
+  <ul id="s9" class="materias oculto">
+    <li>Salud Pública Veterinaria – Requiere Producción de Bovinos de Leche</li>
+    <li>Deontología y Legislación Veterinaria – Requiere Epidemiología Veterinaria</li>
+    <li>Clínica para Todas las Especies – Requiere Producción de Bovinos de Carne</li>
+    <li>Administración Agropecuaria – Requiere Producción de Aves</li>
+    <li>Interacción y Sociología Rural – Requiere Producción de Cerdos</li>
+    <li>Administración de Programas Sanitarios – Requiere Enfermedades Emergentes</li>
+    <li>Gerencia, Planificación y Gestión de Proyectos – Requiere Producción Orgánica Pecuaria</li>
+  </ul>
+
+  <div class="semestre" onclick="toggle('s10')">10mo Semestre</div>
+  <ul id="s10" class="materias oculto">
+    <li>Práctica Pre Profesional en Salud Pública e Inocuidad – Requiere todas las materias del 9no semestre</li>
+    <li>Práctica Pre Profesional en Clínica y Cirugía – Requiere todas las materias del 9no semestre</li>
+    <li>Práctica Pre Profesional en Administración y Producción – Requiere todas las materias del 9no semestre</li>
+    <li>Modalidad de Graduación Directa – Requiere todas las materias del 9no semestre</li>
+    <li>Modalidad de Graduación – Requiere todas las materias del 9no semestre</li>
+  </ul>
+
+  <script>
+    function toggle(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('oculto');
+    }
+  </script>
+</body>
+</html>
